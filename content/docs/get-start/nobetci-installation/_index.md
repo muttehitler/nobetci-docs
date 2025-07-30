@@ -2,7 +2,7 @@
 title: "Nöbetci Installation"
 # date: 2025-07-23T00:30:53+03:30
 # draft: true
-next: about
+next: telegram
 ---
 
 To get started, you just need a linux machine.
@@ -10,7 +10,7 @@ To get started, you just need a linux machine.
 {{< callout type="info" >}}
 TL;DR for installation:
 
-Install Nöbetci app first 
+Install Nöbetci app first (Enter panel confs while installing)
 
 ```bash
 sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetci/raw/main/script.sh)" @ install
@@ -22,10 +22,22 @@ Then install Nöbetnode for each nodes (even local node)
 sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetnode/raw/main/script.sh)" @ install
 ```
 
+Then write client certificate on /var/lib/nobetnode/client.pem
+
+```bash
+nobetci cli node settings > /var/lib/nobetnode/client.pem 2>&1
+```
+
+Up the Nöbetnode
+
+```bash
+nobetnode up
+```
+
 After that add your Nöbetnode to Nöbetci with this command:
 
 ```bash
-nobetci cli node add -n local -h 127.0.0.1 -p 51031
+nobetci cli node add -n local -a 127.0.0.1 -p 51031
 ```
 
 Then restart Nöbetci
@@ -56,11 +68,13 @@ sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetci/raw/main/script.
   To install the latest **nightly** release use the `--nightly` flag.
 {{< /callout >}}
 
+During the installation, you must enter your panel address, username and pass for getting logs from api.
+
 Once the installation is complete:
 
 - You'd notice the logs, which you could stop watching by pressing `Ctrl+C`; The process will continue running normally.
 - the configuration file can be found at `/etc/opt/nobetci/.env` ([.env file doc](/docs/configuration/nobetci))
-- Data files will be placed at `/var/lib/marzneshin`; e.g. the sqlite database.
+- Data files will be placed at `/var/lib/nobetci`; e.g. the sqlite database.
 
 Then install Nöbetnode for ban ip's on current node
 
@@ -68,10 +82,22 @@ Then install Nöbetnode for ban ip's on current node
 sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetnode/raw/main/script.sh)" @ install
 ```
 
+Then write client certificate on /var/lib/nobetnode/client.pem
+
+```bash
+nobetci cli node settings > /var/lib/nobetnode/client.pem 2>&1
+```
+
+Up the Nöbetnode
+
+```bash
+nobetnode up
+```
+
 Next, you need to add local Nöbetnode to Nöbetci 
 
 ```bash
-nobetci cli node add -n local -h 127.0.0.1 -p 51031
+nobetci cli node add -n local -a 127.0.0.1 -p 51031
 ````
 
 Then restart for update nodes
