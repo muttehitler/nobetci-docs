@@ -51,7 +51,7 @@ weight: 1
 | Variable           | Description                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
 | TELEGRAM_API_TOKEN | Telegram bot API token (get token from [@botfather](https://t.me/botfather))                 |
-| TELEGRAM_ADMIN_ID  | Numeric Telegram ID of admin (use [@userinfobot](https://t.me/userinfobot) to found your ID) |
+| TELEGRAM_ADMIN_ID  | Numeric Telegram ID of admin (use [@myidbot](https://t.me/myidbot) to found your ID) |
 
 ## Development and Documentation
 
