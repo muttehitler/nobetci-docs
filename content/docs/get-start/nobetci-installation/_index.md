@@ -1,8 +1,6 @@
 ---
 title: "Nöbetci Installation"
-# date: 2025-07-23T00:30:53+03:30
-# draft: true
-next: telegram
+next: nobetnode-installation
 ---
 
 To get started, you just need a linux machine.
@@ -16,7 +14,7 @@ Install Nöbetci app first (Enter panel confs while installing)
 sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetci/raw/main/script.sh)" @ install
 ```
 
-Then install Nöbetnode for each nodes (even local node) 
+Then install Nöbetnode local node
 
 ```bash
 sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetnode/raw/main/script.sh)" @ install
