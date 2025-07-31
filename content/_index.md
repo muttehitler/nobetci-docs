@@ -3,4 +3,6 @@ title: "Nöbetci"
 breadcrumbs: false
 ---
 
-home
+<div class="hx-mb-6">
+{{< hextra/hero-button text="Get Started" link="docs" >}}
+</div>
