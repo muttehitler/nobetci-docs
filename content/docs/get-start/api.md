@@ -3,6 +3,8 @@ title: "API"
 weight: 4
 ---
 
+## Setup
+
 To setup api, you need to set three env variable on `/var/lib/nobetci/.env`
 
 ```sh
