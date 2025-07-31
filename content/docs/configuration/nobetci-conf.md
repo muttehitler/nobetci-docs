@@ -10,7 +10,7 @@ weight: 1
 | Variable                        | Description                                                                                           |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | UVICORN_HOST                    | Bind application to this host (default: `0.0.0.0`)                                                    |
-| UVICORN_PORT                    | Bind application to this port (default: `8000`)                                                       |
+| UVICORN_PORT                    | Bind application to this port (default: `8307`)                                                       |
 | UVICORN_UDS                     | Bind application to a UNIX domain socket                                                              |
 | UVICORN_SSL_CERTFILE            | SSL certificate file to have application on https                                                     |
 | UVICORN_SSL_KEYFILE             | SSL key file to have application on https                                                             |
