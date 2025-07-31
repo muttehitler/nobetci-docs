@@ -1,6 +1,7 @@
 ---
 title: "Nöbetci Installation"
 next: nobetnode-installation
+weight: 1
 ---
 
 To get started, you just need a linux machine.

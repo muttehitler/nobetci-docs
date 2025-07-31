@@ -1,6 +1,7 @@
 ---
 title: "Nöbetnode Installation"
 next: telegram
+weight: 2
 ---
 
 For ban ip on every marznode, you need to install Nöbetnode on each node server.

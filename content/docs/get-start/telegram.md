@@ -1,5 +1,7 @@
 ---
 title: "Telegram"
+next: api
+weight: 3
 ---
 
 Sends status and banned ips logs from telegram
