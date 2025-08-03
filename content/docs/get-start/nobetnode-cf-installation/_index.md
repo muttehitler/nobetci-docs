@@ -15,7 +15,15 @@ sudo bash -c "$(curl -sL https://github.com/muttehitler/nobetnode-cf/raw/main/sc
 ```
 
 During the installation, you must enter your Cloudflare API Token.
+
+{{< callout type="info" >}}
+How to get Cloudflare API Token
+
 You can get API Token from Cloudflare page > Manage Account > Account API Tokens.
+Select "Create Custom Token".
+Give "Account.Account Firewall Access Rules" permission and select "Edit".
+
+{{< /callout >}}
 
 - You'd notice the logs, which you could stop watching by pressing `Ctrl+C`; The process will continue running normally.
 - the configuration file can be found at `/etc/opt/nobetnode-cf/.env` ([.env file doc](/docs/configuration/nobetnode-cf))
