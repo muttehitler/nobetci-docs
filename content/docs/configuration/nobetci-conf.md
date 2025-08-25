@@ -48,10 +48,11 @@ weight: 1
 
 ## Telegram
 
-| Variable           | Description                                                                                  |
-| ------------------ | -------------------------------------------------------------------------------------------- |
-| TELEGRAM_API_TOKEN | Telegram bot API token (get token from [@botfather](https://t.me/botfather))                 |
+| Variable           | Description                                                                          |
+| ------------------ | -------------------------------------------------------------------------------------|
+| TELEGRAM_API_TOKEN | Telegram bot API token (get token from [@botfather](https://t.me/botfather))         |
 | TELEGRAM_ADMIN_ID  | Numeric Telegram ID of admin (use [@myidbot](https://t.me/myidbot) to found your ID) |
+| TELEGRAM_LOGS      | Send logs from telegram (default: True)                                              |
 
 ## Development and Documentation
 
@@ -80,6 +81,7 @@ API_USERNAME="user"
 API_PASSWORD="pass"
 TELEGRAM_API_TOKEN = 123456789:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 TELEGRAM_ADMIN_ID = 987654321, 123456789
+TELEGRAM_LOGS = True
 SQLALCHEMY_DATABASE_URL = "sqlite:///db.sqlite3"
 SQLALCHEMY_CONNECTION_POOL_SIZE = 10
 SQLALCHEMY_CONNECTION_MAX_OVERFLOW = -1
