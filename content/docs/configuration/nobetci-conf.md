@@ -20,13 +20,13 @@ weight: 1
 
 ## Limit Configurations
 
-| Variable           | Description                                                            |
-| ------------------ | -----------------------------------------------------------------------|
-| DEFAULT_LIMIT      | Default limit for unrecorded users (0 to unlimited)(default: 0)        |
-| BAN_INTERVAL       | Ban time for ip (default: 10)                                          |
-| STL                | Same time limit (default: 10)                                          |
-| IUL                |                                                                        |
-| BAN_LAST_USER      | Ban last connected ip (default: False)                                 |
+| Variable           | Description                                                                        |
+| ------------------ | -----------------------------------------------------------------------            |
+| DEFAULT_LIMIT      | Default limit for unrecorded users (0 to unlimited)(default: 0)                    |
+| BAN_INTERVAL       | Ban time for ip (default: 10)                                                      |
+| STL                | Same time limit: Higher value means lower detection sensitivity (default: 10)      |
+| IUL                | Increase User Limit: Higher value means higher detection sensitivity (default: 50) |
+| BAN_LAST_USER      | Ban last connected ip (default: False)                                             |
 
 ## Panel Configuration
 
